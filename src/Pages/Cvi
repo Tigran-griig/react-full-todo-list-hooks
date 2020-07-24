@@ -1,0 +1,28 @@
+import React,{Component} from 'react';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+
+
+export const Cvi = () =>{
+
+    return (
+        <Dialog
+            open={showModal}
+            onClose={{showModal:false}}
+            aria-labelledby="alert-dialog-title"
+            aria-describedby="alert-dialog-description"
+        >
+            <DialogContent>
+                <DialogContentText id="alert-dialog-description">
+          spasaaaa
+
+                </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+
+            </DialogActions>
+        </Dialog>
+    )
+}

@@ -31,7 +31,7 @@ export const Form = () => {
           className="form-control"
           id="basic-url"
           aria-describedby="basic-addon3"
-          placeholder={"Ask a question and enter your email"}
+          placeholder={"Ask a question enter"}
           value={value}
           onChange={(e) => setValue(e.target.value)}
         ></input>

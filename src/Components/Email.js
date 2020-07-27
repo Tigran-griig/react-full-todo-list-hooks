@@ -7,6 +7,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Slide from '@material-ui/core/Slide';
 import FormEmailChange from "./FormEmailChange";
+import {WeatherApps} from "./Weather/WeatherApps";
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
@@ -30,6 +31,7 @@ export default function FullScreenDialog() {
 
     const handleClose = () => {
         setOpen(false);
+
     };
 
     return (
@@ -50,8 +52,14 @@ export default function FullScreenDialog() {
                 <FormEmailChange handleClose={handleClose} />
 
 
+                    <div>
+                        <WeatherApps />
+                    </div>
                 </List>
+
+
             </Dialog>
+
         </div>
     );
 }

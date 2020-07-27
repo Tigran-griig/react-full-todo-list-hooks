@@ -8,7 +8,9 @@ const url = process.env.REACT_APP_DB_URL;
 
 export const FirebaseState = ({ children }) => {
   const initialState = {
-    lists: [],
+    lists: [
+        {id:23,title:'item1',name:'vzg'}
+    ],
     loading: false,
   };
 
@@ -28,6 +30,7 @@ export const FirebaseState = ({ children }) => {
   };
 
   const addList = async (title) => {
+
     const list = {
       title,
       date: new Date().toJSON(),
